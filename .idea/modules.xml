@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AI_Bootcamp_Class.iml" filepath="$PROJECT_DIR$/.idea/AI_Bootcamp_Class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ai-bootcamp-class.iml" filepath="$PROJECT_DIR$/.idea/ai-bootcamp-class.iml" />
     </modules>
   </component>
 </project>
