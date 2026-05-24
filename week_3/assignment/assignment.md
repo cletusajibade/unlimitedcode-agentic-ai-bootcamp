@@ -215,6 +215,11 @@ Your submission must:
 - Display the compiled graph using `draw_mermaid_png()` in a notebook, or print the
   Mermaid text using `draw_mermaid()` in a Python script.
 
+You can also open the provided
+[`learner_support_triage_workflow.svg`](./learner_support_triage_workflow.svg) image
+to visualize the expected workflow structure while building your graph. Your own
+compiled graph visualization is still required in your submission.
+
 ## Required Test Invocations
 
 Invoke your compiled workflow at least five times, once for each expected route:
@@ -254,6 +259,9 @@ Submit one of the following:
   implementation, and all five invocation results.
 - `week_3/learner_support_triage.py`, plus a screenshot or exported image of the graph
   visualization.
+
+The provided `learner_support_triage_workflow.svg` file is a reference image for the
+required workflow and may be used to compare your graph layout and routing paths.
 
 Also include a short reflection answering:
 

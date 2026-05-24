@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="860" viewBox="0 0 1440 860" role="img" aria-label="Learner support triage workflow">
+  <defs>
+    <style>
+      .canvas { fill: #ffffff; }
+      .node { fill: #f5f7ff; stroke: #4056a1; stroke-width: 2; }
+      .terminal { fill: #e9f7ef; stroke: #207544; stroke-width: 2; }
+      .decision { fill: #fff5e8; stroke: #c67605; stroke-width: 2; }
+      .branch { fill: #eef6ff; stroke: #2874a6; stroke-width: 2; }
+      .edge { fill: none; stroke: #536276; stroke-width: 2; marker-end: url(#arrow); }
+      .label-bg { fill: #ffffff; }
+      .text { fill: #172b4d; font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 600; text-anchor: middle; dominant-baseline: middle; }
+      .route { fill: #43546a; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 600; text-anchor: middle; dominant-baseline: middle; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#536276"/>
+    </marker>
+  </defs>
+
+  <rect class="canvas" width="1440" height="860"/>
+
+  <!-- Connecting paths -->
+  <path class="edge" d="M720 66 L720 99"/>
+  <path class="edge" d="M720 153 L720 186"/>
+  <path class="edge" d="M720 240 L720 274"/>
+
+  <path class="edge" d="M720 390 L720 420 L155 420 L155 476"/>
+  <path class="edge" d="M720 390 L720 420 L438 420 L438 476"/>
+  <path class="edge" d="M720 390 L720 476"/>
+  <path class="edge" d="M720 390 L720 420 L1002 420 L1002 476"/>
+  <path class="edge" d="M720 390 L720 420 L1285 420 L1285 476"/>
+
+  <path class="edge" d="M155 534 L155 592 L720 592 L720 637"/>
+  <path class="edge" d="M438 534 L438 592 L720 592 L720 637"/>
+  <path class="edge" d="M720 534 L720 637"/>
+  <path class="edge" d="M1002 534 L1002 592 L720 592 L720 637"/>
+  <path class="edge" d="M1285 534 L1285 592 L720 592 L720 637"/>
+  <path class="edge" d="M720 691 L720 727"/>
+
+  <!-- Route labels -->
+  <rect class="label-bg" x="114" y="402" width="82" height="25"/>
+  <text class="route" x="155" y="414">urgent</text>
+  <rect class="label-bg" x="394" y="402" width="88" height="25"/>
+  <text class="route" x="438" y="414">technical</text>
+  <rect class="label-bg" x="684" y="402" width="72" height="25"/>
+  <text class="route" x="720" y="414">billing</text>
+  <rect class="label-bg" x="936" y="402" width="132" height="25"/>
+  <text class="route" x="1002" y="414">learning_support</text>
+  <rect class="label-bg" x="1248" y="402" width="74" height="25"/>
+  <text class="route" x="1285" y="414">general</text>
+
+  <!-- Nodes -->
+  <rect class="terminal" x="650" y="20" width="140" height="46" rx="23"/>
+  <text class="text" x="720" y="43">START</text>
+
+  <rect class="node" x="590" y="99" width="260" height="54" rx="8"/>
+  <text class="text" x="720" y="126">intake_node</text>
+
+  <rect class="node" x="555" y="186" width="330" height="54" rx="8"/>
+  <text class="text" x="720" y="213">calculate_priority_node</text>
+
+  <path class="decision" d="M720 274 L835 332 L720 390 L605 332 Z"/>
+  <text class="text" x="720" y="332">route_request</text>
+
+  <rect class="branch" x="40" y="476" width="230" height="58" rx="8"/>
+  <text class="text" x="155" y="505">urgent_node</text>
+
+  <rect class="branch" x="323" y="476" width="230" height="58" rx="8"/>
+  <text class="text" x="438" y="505">technical_node</text>
+
+  <rect class="branch" x="605" y="476" width="230" height="58" rx="8"/>
+  <text class="text" x="720" y="505">billing_node</text>
+
+  <rect class="branch" x="887" y="476" width="230" height="58" rx="8"/>
+  <text class="text" x="1002" y="505">learning_support_node</text>
+
+  <rect class="branch" x="1170" y="476" width="230" height="58" rx="8"/>
+  <text class="text" x="1285" y="505">general_node</text>
+
+  <rect class="node" x="590" y="637" width="260" height="54" rx="8"/>
+  <text class="text" x="720" y="664">summary_node</text>
+
+  <rect class="terminal" x="650" y="727" width="140" height="46" rx="23"/>
+  <text class="text" x="720" y="750">END</text>
+</svg>
