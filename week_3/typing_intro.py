@@ -34,12 +34,18 @@ if __name__ == "__main__":
 
     user3: AgentData = {
         "name": "James",
-        
+
     }
 
     value: Union[int | str] = "48"
 
     print(value)
+    print(type(value))
+
+    value: Union[int | str] = False
+
+    print(value)
+    print(type(value))
 
     add = lambda x,y: x+y
     print(add(3,5))
