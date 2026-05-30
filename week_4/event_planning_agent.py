@@ -36,7 +36,7 @@ class ReviewResult(BaseModel):
     feedback: str = Field(description="Specific feedback for improvement")
 
 
-# Define the workflow/graph state
+# Define the graph state schema
 class AgentState(TypedDict):
     user_request: str
     event_details: Optional[EventDetails]
