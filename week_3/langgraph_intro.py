@@ -39,7 +39,7 @@ workflow = graph.compile()
 initState = {
     "message": "Welcome to LangGraph!",
     "name": "James",
-    "age": 26
+    "age": 26 
 }
 result = workflow.invoke(initState)
 
