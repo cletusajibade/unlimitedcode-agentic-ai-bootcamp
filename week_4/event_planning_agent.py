@@ -94,10 +94,8 @@ def check_weather(location: str) -> str:
 
 # Node 1: Extract event details in a structured format.
 def extract_event_details_node(state: AgentState) -> dict:
-    print(f"extract_event_details_node state - user_request: {state["user_request"]}")
-
-    # NOTE for "with_structured_output()":
-    # "with_structured_output()" tells the LLM, "Whenever you answer, produce an EventDetails object."
+    # NOTE for 'with_structured_output()':
+    # 'with_structured_output()' tells the LLM, "Whenever you answer, produce an EventDetails object."
     # LangChain uses the schema to instruct the model to produce structured data.
     # This is a powerful way to control the output format.
     # If not used, the model returns a human-readable output which will be challenging for downstream code to process,
@@ -119,10 +117,7 @@ Rules:
 """
 
     details = structured_llm.invoke(prompt)
-    print(f"extract_event_details_node state - details: {details}")
-
-    test_response = llm.invoke(state["user_request"])
-    print(f"extract_event_details_node state - test_response: {test_response}")
+    #print(f"extract_event_details_node state - details: {details}")
 
     return {
         "event_details": details
